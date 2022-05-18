@@ -24,7 +24,7 @@
             <% if user_signed_in? %>
             
             <li class="nav-item">
-             <%= link_to  root_path, class: 'nav-link text-light' do %>
+             <%= link_to  user_path(current_user), class: 'nav-link text-light' do %>
              <i class="fas fa-house"></i> Home
              <% end %>
             </li>
@@ -80,5 +80,6 @@
     </header>
     
     <%= yield %>
+    </body>
 </html>
 
