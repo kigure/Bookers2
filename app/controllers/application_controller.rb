@@ -2,12 +2,17 @@ class ApplicationController < ActionController::Base
   
   before_action :authenticate_user!, except: [:top, :about] #ログインしてないユーザーが入れる場所
   before_action :configure_permitted_parameters, if: :devise_controller?
+  
+
+  
   def after_sign_in_path_for(resource)
+    flash[:login] = 'Signed in successfully.'
     user_path(current_user)# ログイン後に遷移するpath
   end
 
 
   def after_sign_out_path_for(resource)
+    flash[:log_out] = 'Sign out successfully.'
     root_path # ログアウト後に遷移するpath
   end
   

@@ -1,2 +1,32 @@
-<h1>Books#edit</h1>
-<p>Find me in app/views/books/edit.html.erb</p>
+<% if @book.errors.any? %>
+  <%= @book.errors.count %>件のエラーが発生しました
+  <ul>
+    <% @book.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<p id="mi-2"></p>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
+            <h1>Editing Book</h1>
+            <%= form_with model: Book.find(params[:id]) do |f| %>
+
+           <p>Title</p>
+           <%= f.text_field :title, class: 'form-control' %>
+           
+           <p>Opinion</p>
+           <%= f.text_area :body, class: 'form-control' %>
+           
+	       <div class="mt-2 mb-2">
+           <%= f.submit 'Update Book', class: 'btn btn-outline-success' %>
+           </div>
+           
+           <% end %>
+           <%= link_to 'Show', book_path(Book.find(params[:id])) %>  |  <%= link_to 'Back', books_path %>
+        </div>
+    </div>
+</div>
+
