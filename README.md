@@ -1,24 +1,27 @@
-# README
+# <Bookers2>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+Bookers2では世界中の人達のお気に入り本が閲覧できます。
+今流行りの本や隠れた名作をあなたにお届けします。
 
-Things you may want to cover:
+### サイトテーマ
+Bookers2は世界中の人達のお気に入り本が閲覧できるレビュー系サイト
 
-* Ruby version
+### テーマを選んだ理由
+海外の方のおすすめ本や、各地域で流行りの本を知りたい人のためにこのテーマにしました。
 
-* System dependencies
+### ターゲットユーザ
+国内や海外で流行りの本や、隠れた名作を見つけたい人におすすめです。
 
-* Configuration
+### 主な利用シーン
+国内や海外で流行りの本や、隠れた名作を見つけたい時やお気に入りの本の評価が気になった際にご利用いただけます。
 
-* Database creation
+## 設計書
+<...>
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 開発環境
+- OS：Linux(CentOS)
+- 言語：HTML,CSS,JavaScript,Ruby,SQL
+- フレームワーク：Ruby on Rails
+- JSライブラリ：jQuery
+- IDE：Cloud9
