@@ -57,6 +57,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
 
+
 gem 'capybara', '>= 2.15'
 gem 'rspec-rails'
 gem "factory_bot_rails"
