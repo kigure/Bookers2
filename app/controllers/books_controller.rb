@@ -15,7 +15,7 @@ class BooksController < ApplicationController
 
   def create
     @book = Book.new(book_params)
-    @book.score = Language.get_data(book_params[:body])
+    # @book.score = Language.get_data(book_params[:body])
     @book.user_id = current_user.id
 
     if @book.save

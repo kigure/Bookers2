@@ -52,7 +52,6 @@
                     <% end %>
                 </td>
                 <td><%= @book.body %></td>
-                <td><span class="sentiment-score">本文の感情分析スコア<%= @book.score %></span></td>
                 <% if @book.user.id == current_user.id %>
                 <td>
                   <%= link_to 'Edit', edit_book_path(@book), class: 'btn btn-sm btn-success' %>
